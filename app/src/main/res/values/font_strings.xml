@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<font name="medium">@font/poppins_medium</font>"
+<font name="semi_bold">@font/poppins_semibold</font>"
+<font name="regular">@font/poppins</font>"
+<font name="light">@font/poppins_light</font>"
+</resources>

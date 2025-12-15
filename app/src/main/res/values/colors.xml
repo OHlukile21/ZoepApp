@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#04764E</color>
+    <color name="color_secondary">#087E55</color>
+    <color name="color_active">#F6DBB3</color>
+    <color name="color_transparent">@android:color/transparent</color>
+
+    <color name="text_color_primary">#1B1B1B</color>
+    <color name="text_color_secondary">#811B1B1B</color>
+    <color name="text_color_white">@color/white</color>
+    <color name="text_color_black">@color/black</color>
+    <color name="dark_gray">#4F4F4F</color>
+    <color name="edittext_color">#1B1B1B</color>
+    <color name="edittext_hint_color">#929292</color>
+
+    <color name="btn_text_color_primary">#fff</color>
+    <color name="btn_text_color_secondary">#000</color>
+
+    <color name="background_color_primary">#F9F9F9</color>
+    <color name="background_color_secondary">#85FFFFFF</color>
+
+    <color name="brand_color_facebook">#376AED</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="icon_button_bg_color">#E6E6E6</color>
+    <color name="icon_button_icon_color">#373737</color>
+    <color name="icon_color">#5F5F5F</color>
+    <color name="color_stroke">#EBEBEB</color>
+    <color name="color_tab_inactive">#A5A5A5</color>
+    <color name="color_tab_active">@color/color_primary</color>
+    <color name="color_seekBar_progressTint">@color/color_primary</color>
+    <color name="color_seekBar_progressBackgroundTint">#ECECEC</color>
+    <color name="menu_item_text_color">#9A000000</color>
+    <color name="welcomeScreenBgColor">#00060606</color>
+    <color name="color_primary_secondory_bg">#E5F5F0</color>
+    <color name="dividerColor">#2B2D30</color>
+    <color name="divider_color">#EBEBEB</color>
+    <color name="df">#4CAF50</color>
+    <color name="color_sucess">#219652</color>
+    <color name="color_danger">#EB5757</color>
+    <color name="color_warning">#FDE972</color>
+    <color name="color_info">@color/background_color_primary</color>
+    <color name="actionBarBackground">@color/text_color_white</color>
+
+
+    <color name="selected_button_color">#C8E6C9</color>
+    <color name="selected_button_stroke_color">#04764E</color>
+    <color name="selected_button_text_color">#04764E</color>
+    <color name="unselected_button_stroke_color">#04764E</color>
+    <color name="unselected_button_text_color">#04764E</color>
+
+    <!-- Selected Button (Potatoes) -->
+    <color name="colorSelectedBackground">#C8E6C9</color> <!-- Background color -->
+    <color name="colorSelectedOutline">#388E3C</color> <!-- Stroke color -->
+    <color name="colorSelectedText">#388E3C</color> <!-- Text color -->
+
+    <!-- Unselected Buttons (Tomatoes, Carrots) -->
+    <color name="colorOutline">#388E3C</color> <!-- Outline color -->
+    <color name="colorUnselectedText">#388E3C</color>
+    <color name="colorSelectedBackgroundIcon">#90CAF8</color>
+    <color name="colorOutlineIcon">#5083B8</color> <!-- Text color -->
+
+
+</resources>

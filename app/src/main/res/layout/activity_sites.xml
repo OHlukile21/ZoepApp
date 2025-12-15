@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_primary"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_marginTop="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0">
+
+
+
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="0dp"
+            android:alpha="80"
+            android:fontFamily="@font/semi_bold"
+            android:text="Williams"
+            android:textColor="@color/text_color_black"
+            android:textSize="24dp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dip"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.90"
+            android:fontFamily="@font/regular"
+            android:text="Building Inspector"
+            android:textColor="@color/text_color_black"
+            android:textSize="14dp"
+            tools:ignore="TextSizeCheck" />
+
+        <RelativeLayout
+            android:id="@+id/rlMenu"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="20dp"
+            android:layout_width="50dip"
+            android:layout_height="match_parent">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMenu"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="8dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="24dp"
+                android:padding="00dp"
+                app:icon="@drawable/menu_icon"
+                app:iconGravity="start"
+                app:iconTint="@color/icon_color" />
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+        <RelativeLayout
+
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+            <LinearLayout
+                android:id="@+id/llNoSitesAlert"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="70dip"
+                    android:src="@drawable/no_site_alert"
+                    android:layout_height="70dip"/>
+                <TextView
+                    android:layout_marginTop="1dip"
+                    android:id="@+id/txtNoSites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Facilities Found!"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/medium" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btnRetry"
+                    android:layout_marginTop="20dip"
+                    android:layout_height="wrap_content"
+                    style="@style/button_primary_outline"
+                    android:text="Retry" />
+
+            </LinearLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+               android:layout_marginBottom="5dip"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSites"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/item_site"
+
+                    android:layout_height="match_parent"/>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNewReport"
+                android:visibility="gone"
+                 android:layout_alignParentBottom="true"
+                style="@style/button_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Report" />
+        </RelativeLayout>
+</LinearLayout>
