@@ -116,7 +116,10 @@ SiteincidentAdapter adapter;
             @Override
             public void onClick(View v) {
 
-                showNewIncidentBottomSheet();
+                Intent intent = new Intent(SiteDetailActivity.this, AddIncidentActivity.class);
+                intent.putExtra("siteId", siteId); // pass siteId if needed
+                startActivity(intent);
+
             }
         });
 

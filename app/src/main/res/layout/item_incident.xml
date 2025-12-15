@@ -96,6 +96,25 @@
                     android:text="Remedial Action: Replacing 30 broken seats"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
+
+                <!-- REQUEST REVIEW SECTION -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRequestReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Request Review"
+                    android:textSize="12sp"
+                    style="@style/button_primary_outline" />
+
+                <TextView
+                    android:id="@+id/txtReviewWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚠ Review requests from Facility Managers may incur extra charges"
+                    android:textSize="10sp"
+                    android:textColor="@color/color_danger"
+                    android:layout_marginTop="4dp" />
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
